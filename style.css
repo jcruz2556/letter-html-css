@@ -90,12 +90,14 @@ body {
 }
 
 /*Anything that happens when hovering over the envelope */
-.wrapper:hover .lid.one{
+.wrapper:hover .lid.one,
+.wrapper.open .lid.one {
     transform: rotateX(90deg);
     transition-delay: 0s;
 }
 
-.wrapper:hover .lid.two{
+.wrapper:hover .lid.two, 
+.wrapper.open .lid.two{
     transform: rotateX(180deg);
     transition-delay: 0.25s;
 }
@@ -133,13 +135,13 @@ body {
     animation: pop-spark 1s ease forwards;
 }
 
-.wrapper:hover .spark1{
+.wrapper:hover .spark1, .wrapper.open .spark1{
     animation-delay: 0.55s;
 }
-.wrapper:hover .spark2{
+.wrapper:hover .spark2, .wrapper.open .spark2{
     animation-delay: 0.6s;
 }
-.wrapper:hover .spark3{
+.wrapper:hover .spark3, .wrapper.open .spark3{
     animation-delay: 0.65s;
 }
 
